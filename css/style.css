@@ -42,3 +42,281 @@ img {
     max-width: 100%;    
     vertical-align: top;
 }
+
+.header {
+  position: relative;
+}
+
+.header__wrap,
+.fst-screen__wrap,
+.program__wrap,
+.stages__wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header__inner,
+.fst-screen__inner,
+.program__inner,
+.stages__inner {
+  margin: 0 40px;
+  max-width: 1220px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.header__inner  img {
+  margin-top: 50px;
+}
+
+.header__nav {
+  margin-top: 74px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item + .nav__item {
+  margin-left:  35px;
+}
+
+.nav__item {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 25px;
+}
+.nav__link {
+  color: white;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.nav__link--active {
+  border-bottom: 2px solid white;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid white
+}
+
+.fst-screen__inner {
+  position: relative;
+  min-height: 580px;
+}
+
+.fst-screen::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 700px;
+  display: block;
+
+  top: 0;
+  right: 0;
+  background: url('../img/index-background-desktop-jpg.png');
+  background-size: cover;
+  z-index: -1;
+}
+
+.fst-screen__inner img {
+  position: absolute;
+  top: 0;
+  right: 25%;  
+}
+
+.fst-screen__info {
+  margin-top: 100px;
+  max-width: 470px;
+}
+
+.fst-screen__header {
+  font-family: 'Oswald',sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+
+  margin-bottom: 50px;
+}
+
+.fst-screen__slogan {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 56px;
+}
+
+.fst-screen__link  {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 30px;
+  color: white;
+  background-color: #68b738;
+}
+
+.program {
+  margin-bottom: 60px;
+}
+
+.program__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.program__block {
+  width: 570px;
+  min-height: 370px;
+  background-color: #f2f2f2;
+  position: relative;  
+}
+.program__head-wrap {
+  display: flex;
+  align-items: center;
+  height: 190px;
+}
+
+.program__circle {  
+  margin-left: 42px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #68b738;
+  position: relative;
+}
+
+.program__header {
+  text-transform: uppercase;  
+  font-size: 36px;
+  line-height: 37px;
+  font-weight: 400;
+  margin-left: 60px;
+}
+
+.program__circle--standing::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 9px;
+
+  width: 70px;
+  height: 97px;  
+
+  background: url('../img/icon-cat-1.png') no-repeat center center;
+} 
+
+.program__circle--lying::after {
+  content: '';
+  position: absolute;
+  top: 23px;
+  left: -19px;
+
+  width: 134px;
+  height: 56px;  
+
+  background: url('../img/icon-cat-2.png') no-repeat center center;
+}
+
+.program__info {
+  margin: 0;
+  padding: 0 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #111111;
+}
+
+.program__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 50px;  
+  color: #111111;
+  transition: .3s;
+
+}
+
+.program__link:hover {
+  color: #68b738;
+}
+
+.program__link:active {
+  color: #3d6624;
+}
+
+.stages__header {
+  margin: 0;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+.stages__block-swap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stages__block {
+  width: 245px;
+  position: relative;
+}
+
+.stages__block::after {
+  position: absolute;
+
+  font-size: 260px;
+  line-height: 195px;
+  z-index: -1;
+  color: #f2f2f2;
+  width: auto;
+  height: 100%;
+
+  top: 0;
+  right: 0;
+}
+
+.stages__block--useful::after {
+  content: '1';
+}
+.stages__block--powder::after {
+  content: '2';
+}
+.stages__block--change::after {
+  content: '3';
+}
+.stages__block--result::after {
+  content: '4';
+}
+
+
+.stages__icon {
+  width: 80px;
+  height: 80px;
+  background-color: #68b738;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.stages__info {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444444;
+}
